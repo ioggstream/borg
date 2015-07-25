@@ -70,9 +70,7 @@ Some of the steps detailled below might be useful also for non-git installs.
     source borg-env/bin/activate   # always before using!
 
     # install borg + dependencies into virtualenv
-    pip install cython  # compile .pyx -> .c
-    pip install tox pytest  # optional, for running unit tests
-    pip install sphinx  # optional, to build the docs
+    pip install -r requirements.d/development.txt
     cd borg
     pip install -e .  # in-place editable mode
 
@@ -111,9 +109,7 @@ Some of the steps detailled below might be useful also for non-git installs.
     source borg-env/bin/activate   # always before using!
 
     # install borg + dependencies into virtualenv
-    pip install cython  # compile .pyx -> .c
-    pip install tox pytest  # optional, for running unit tests
-    pip install sphinx  # optional, to build the docs
+    pip install -r requirements.d/development.txt
     cd borg
     pip install -e .  # in-place editable mode
 

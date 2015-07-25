@@ -1,4 +1,17 @@
+#
+# Requirements for borg. You may want
+#  to install them in a virtualenv.
+#
+
+# compile .pyx -> .c
+Cython
+
+# optional, for running unit tests
 tox
 mock
 pytest
-Cython
+
+# optional, to build the docs
+sphinx
+
+
