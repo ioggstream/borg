@@ -1,0 +1,12 @@
+#
+# Docker image creating an ubuntu machine with
+#  borg libraries.
+#
+#  run with `docker-compose up -d`
+#  access with `docker exec -ti $CONTAINER /bin/bash`
+# 
+borg:
+  build: .
+  volumes:
+    - .:/code
+  command: tail -f /etc/hosts
